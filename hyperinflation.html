@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Life in Venezuela</title>
+    </head>
+    <body>
+        <div class="topMargin" id="heading">
+            <span id="logo"><span style="color: black;">Life in </span><span style="color: yellow;">Ven</span><span style="color: blue;">ezu</span><span style="color: red;">ela</span></span>
+            <div class="floatRight topMargin rightMargin" style="width: 33%;">
+                <span style="font-style:italic; font-size: large; color: white;">Showing how living in Venezuela is</span>
+            </div>
+        </div>
+        <br>
+        <nav class="tab">
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="services.html">Basic services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="crime.html">Crime</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="fuel.html">Fuel shortage</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="health.html">Health system</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="hyperinflation.html">Hyperinflation</a>
+                </li>
+
+            </ul>
+        </nav>
+        <br>
+        <p>Imagine that today you go to a convenience store near your house to buy some snacks, maybe you want to eat them while watching a movie or TV show
+        with your family during the evening. You spent 2 dollars on them. The next day you go to the same convenience store to buy <span class="italic bold">the exact same products</span>,
+        however this time you spent 3 dollars on them. The next day, 4 dollars, the next day, 5 dollars, so on and so forth, until you decide to stop buying them because
+        such products have become a luxury for you, you can't afford them anymore.</p>
+        <div class="floatRight" style="margin: 10px 100px 10px 50px;">
+            <p class="centered bold">Calculate how many minimum wages are necessaries<br> in Venezuela to pay for any product/service you usually get:
+            <table style="margin-left: 70px">
+                <tr>
+                    <td>Price ($):</td>
+                    <td>
+                        <input size=12 type="text" id="amount" value="1" class="input">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Price (VES):</td>
+                    <td class="rightAligned" id="exchange">193,404.59</td>
+                </tr>
+                <tr>
+                    <td>Minimum wage ($)</td>
+                    <td class="rightAligned">2.07</td>
+                </tr>
+                <tr>
+                    <td>Minimum wage (VES)</td>
+                    <td class="rightAligned">400,000.00</td>
+                </tr>
+                <tr>
+                    <td>Minimum wages (#)</td>
+                    <td class="rightAligned" id="wages">0.48</td>
+                </tr>
+            </table>
+            <form onsubmit="calculate(); return false;" class="centered">
+                <input type="submit" value="Calculate" class="topMargin">
+            </form><br>
+            <p class="comment rightAligned" style="margin-bottom: 2px;"><a href="http://www.bcv.org.ve/estadisticas/tipo-de-cambio#titulo1" target="_blank">Official exchange rate</a> on May 26, 2020: <span class="bold">193,404.59</span></p>
+            <p class="alert alert-warning" role="alert">We don't consider the meal allowance for the calculation,<br> as it's not possible to pay for any product/service with it.</p>
+
+        </div>
+        <p>This is a simple example of how is to live under an hyperinflationary economy like Venezuela's, where by January 2020 <a href="https://www.bloomberg.com/news/articles/2020-01-11/venezuela-s-maduro-starts-year-with-a-67-minimum-wage-hike"
+        target="_blank">the minimum wage would pay for less than 1 kilogram of beef</a>. Recently, since May 1, 2020,
+        <a href="https://www.politicalhispanic.com/en/venezuela-socialism-comunism/" target="_blank">the new minimum wage totalizes aproximately 4.66$</a>. Bear in mind though, that
+        those 4.66$ include 2.33$ that correspond to meal allowance, so the base salary for someone who earns a minimum wage, is actually 2.33$.</p>
+        <p>But how do Venezuelans survive? Might the reader ask.</p>
+        <p>By November 2019, more than <a href="https://www.thenewhumanitarian.org/news/2019/11/21/Venezuela-migrants-visa-restrictions-Colombia" target="_blank">
+        4.5 million Venezuelans had emigrated around the globe</a>. Most of those Venezuelans, like me, send money home, so that their families can survive. However, not everyone in Venezuela
+        have a family member abroad. Many are dying of hunger, and <a href="https://www.theguardian.com/global-development/2020/feb/12/venezuela-crisis-babies-die-malnutrition-depression-deprivation-infant-mortality" target="_blank">
+        babies are dying of malnutrition.</a></p>
+        <script src="functions.js"></script>
+    </body>
+
+</html>
+
+
+
